@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        /* <!--  class in parent --> */
+        .container .item .item  > .item{
+            background-color: blue;
+        }
+
+        .button{
+            font-size: 20px;
+            width: 100px;
+            height: 60px;
+        }
+        .button.sub{
+            background-color: red;
+        }
+        .button.like{
+            background-color: blue;
+        }
+        .button.share{
+            background-color: greenyellow;
+        }
+
+        .item1 + .item2{
+            background-color: yellow;
+        }
+
+        input[type=text]{
+            border:10px gray solid;
+            height: 30px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!--  class ลูก , เลือกลูก -->
+    <div  class = "container" > 
+        Container
+        <div class = "item"> 
+            item
+
+            <div class = "item"> 
+                item 1
+                <div class = "item"> 
+                    item 1
+                </div>
+                <div class = "item"> 
+                    item 1
+                </div>
+            </div>
+            <div class = "item"> 
+                item 2
+            </div>
+            <div class = "item"> 
+                item 3
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- class มี base แล้ว add class จะแสดงผลเมื่อมีทั้ง 2 class -->
+    <button class = "button sub">Subscribe</button>
+    <button class = "button like">Like</button>
+    <button class = "button share">Share</button>
+
+    <!-- class เพื่อนบ้าน-->
+    <div class = "item2"> Item2</div>
+    <div class = "item1"> Item1</div>
+    <div class = "item2"> Item2</div>
+
+    <!--Atribute selector-->
+    <input name = "firstname" type ="text">
+    <input name = "lastname" type ="text">
+    <input name = "description" type ="text">  
+</body>
+</html>
