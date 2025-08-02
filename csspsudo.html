@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            background-color: gray;
+            border:0px;
+            padding :20px;
+
+        }
+        .button:hover{
+            background-color: blue;
+        }
+        .button:active{
+            background-color: orange;
+        }
+        .button:focus{
+            background-color: red;
+        }
+
+        .container .item:first-child{
+            background-color: blue;
+        }
+        .container .item:last-child{
+            background-color: red;
+        }
+        .container .item:nth-child(3){
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1.hover ลากเมาสส์ไปวางข้างบน 2.active กดค้าง 3.focus โดนกดล่าสุด-->
+    <button class = "button"> This is Button </button>
+    
+    <!-- การเลือก child-->
+    <div>
+        <div class = "container">  
+            <div class = "item">item1</div>
+            <div class = "item">item2</div>
+            <div class = "item">item3</div>
+            <div class = "item">item4</div>
+            <div class = "item">item5</div>
+        </div>
+    </div>
+
+</body>
+</html>
