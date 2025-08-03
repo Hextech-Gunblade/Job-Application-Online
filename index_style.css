@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'THS';
+    src: url(./THSarabunNew/THSarabunNew.ttf);
+}
+body{
+    font-family: 'THS';
+    font-size: 30px;
+}
+
+.container{
+    width : 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header{
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+.flex{
+    display: flex;
+}
+.radflex{
+    display: flex;
+}
+
+.mb10px{
+    margin-bottom: 10px;
+}
+
+.longinp{
+    width: 300px;
+     margin-right: 50px;
+}
+
+.text-box {
+    text-decoration: underline dotted;
+    text-decoration-color: #000; /* Optional: Set underline color */
+}
+
+.text-center{
+    text-align: center;
+}
+.txtsize{
+    width: 200px;
+}
+.submitbutton{
+    border: 1;
+    width: 100%;
+    height: 40px;
+    background-color: darkorange;
+    color: white;
+}
+
+.mgright{
+    margin-right: 50px;
+}
+
+@media screen and (max-width:768px){
+    .flex{
+        flex-direction: column;
+    }
+}

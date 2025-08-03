@@ -4,105 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        @font-face {
-            font-family: 'THS';
-            src: url(./THSarabunNew/THSarabunNew.ttf);
-        }
-        body{
-            font-family: 'THS';
-            font-size: 30px;
-        }
-
-        .container{
-            width : 60%;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: aliceblue;
-            padding: 20px;
-        }
-
-        .header{
-            font-size: 40px;
-            font-weight: bold;
-            text-decoration: underline;
-            text-align: center;
-        }
-        .flex{
-            display: flex;
-        }
-
-        .mb10px{
-            margin-bottom: 10px;
-        }
-        .longinp{
-            width: 300px;
-        }
-        .txtmargin{
-            width: 160px;
-        }
-        .mglft{
-            margin-left: 20px;
-        }
-        .text-box {
-            text-decoration: underline dotted;
-            text-decoration-color: #000; /* Optional: Set underline color */
-        }
-        .text-center{
-            text-align: center;
-        }
-        .submitbutton{
-            border: 1;
-            width: 100%;
-            height: 40px;
-            background-color: darkorange;
-            color: white;
-        }
-    </style>
+    <link rel = "stylesheet" href = "index_style.css">
 </head>
 <body>
 
     <div class = "container">
-
         <div class = "header mb10px"> ใบสมัครงาน </div>
 
         <div class = "flex mb10px">
-            <div class = "txtmargin"> ชื่อ - นามสกุล : </div>
+            <div class = "txtsize"> ชื่อ - นามสกุล : </div>
             <input type = "text" class = "longinp">
-            <div class = "mglft" > ชื่อเล่น : </div>
-            <input type = "text">
+            <div class = "txtsize" > ชื่อเล่น : </div>
+            <input type = "text" class = "longinp">
         </div>
 
         <div class = "flex mb10px">
-            <div class = "txtmargin"> Name in English : </div>
+            <div class = "txtsize"> Name in English : </div>
             <input type = "text" class = "longinp">
             
-            <div class = "Gender flex">
-                <div class = "mglft"> เพศตามกำเนิด </div>
+            <div class = "Gender radflex">
+                <div class = "txtsize"> เพศตามกำเนิด </div>
                 <input name = "Gender" type = "radio" > ชาย
                 <input name = "Gender" type = "radio" > หญิง
             </div>
         </div>
 
         <div class = "flex mb10px">
-            <div> วันเกิด </div>
-            <input type = "date" class = "mglft">
+            <div class = "txtsize"> วันเกิด </div>
+            <input type = "date" class = "longinp">
 
-            <div class = "mglft" > วันที่สมัคร </div>
-            <input type = "date" class = "mglft">
+            <div class = "txtsize" > วันที่สมัคร </div>
+            <input type = "date" class = "longinp">
         </div>
 
         <div class = "flex mb10px">
-            <div class = "txtmargin"> สมัครงานตำแหน่ง : </div>
-            <input type = "text"> 
+            <div class = "txtsize"> สมัครงานตำแหน่ง : </div>
+            <input type = "text" class = "longinp"> 
         
             <div class = "flex">
-                <div class = "mglft">  ประสงค์ค่าจ้าง :  </div>
-                <input type="number" class = "mglft">
-                <div > บาท/</div>
-                <input name = "moneytype" type="radio"> เดือน
-                <input name = "moneytype" type="radio"> วัน
+                <div class = "txtsize">  ประสงค์ค่าจ้าง :  </div>
+                <input type="number" class = "longinp">
+                
+                <div class = "radflex">
+                    <div > บาท/</div>
+                    <input name = "moneytype" type="radio"> เดือน
+                    <input name = "moneytype" type="radio"> วัน
+                </div>
             </div>
         </div>
 
