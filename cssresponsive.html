@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: red;
+        }
+
+        @media screen and (max-width: 768px){
+            .container{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        Hello World breakpoint
+    </div>
+    <picture>
+        <!--ภาพเงื่อนไข-->
+        <source media = "(max-width:768px)" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tung_tung_tung_sahur.webp/500px-Tung_tung_tung_sahur.webp.png">
+        <!-- ภาพหลัก-->
+        <img src="https://media1.tenor.com/m/riuW5lq1bt0AAAAC/tralalero-tralala.gif" >
+    </picture>
+</body>
+</html>
