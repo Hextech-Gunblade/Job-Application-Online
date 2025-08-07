@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #submitbutton{
+            background-color: green;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <a id = "FBlink" href = "https://web.facebook.com/" target="_blank"> facebook </a>
+    ชื่อจริง <input type = "text" id = "firstname" name = "firstname" value ="Chatchai">
+
+    <button id="submitbutton" onclick = "submitfx()"> Submit </button>
+
+    <button onclick = "submit2fx(event)"> This is Button For Event </button>
+
+    <script>
+        let FBlinkDom = document.getElementById("FBlink")
+        console.log(FBlinkDom.getAttribute("href"))
+        console.log(FBlinkDom.getAttribute("target"))
+        FBlinkDom.setAttribute("href","https://www.youtube.com/watch?v=K110MtP_Mis")
+
+        let submitbuttonDom = document.getElementById("submitbutton")
+        const submitfx = () =>{
+            submitbuttonDom.setAttribute("disabled" , "true")
+            submitbuttonDom.style.backgroundColor = "red"
+        }
+
+        const submit2fx = (event) =>{
+            let event_receptor = event.target 
+            event_receptor.setAttribute("disabled" , "true")
+            event_receptor.style.backgroundColor = "blue"
+        }
+
+        let firstnameDOM = document.getElementById("firstname")
+        console.log(firstnameDOM.getAttribute("value"))
+    </script>
+</body>
+</html>
