@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <div>
+        <h2> สิ่งที่สนใจ </h2>
+        <div id = "content">            
+            
+        </div>
+    </div>
+    <input type = "checkbox" name = "interest" value = "กีฬา"> กีฬา
+    <input type = "checkbox" name = "interest" value = "เกม"> เกม
+    <input type = "checkbox" name = "interest" value = "อ่านหนังสือ"> อ่านหนังสือ
+    <input type = "checkbox" name = "interest" value = "ทำความสะอาด"> ทำความสะอาด
+    <button name = "button" onclick="ButtonClick()"> Submit </button>
+    <script >
+        const ButtonClick = () => {
+            
+            let chDOM = document.querySelectorAll('input[name=interest]')
+            let selected_output = "<ul>"
+            // console.log(chDOM)
+            for(let i = 0 ;i<chDOM.length;i++){
+                if( chDOM[i].checked == true){
+                    // console.log(chDOM[i].value);
+                    selected_output += "<li>" + chDOM[i].value + "</li>"
+                }
+            }
+            selected_output += "</ul>"
+            let content = document.getElementById("content")
+            content.innerHTML = selected_output
+        }
+    </script>
+</body>
+</html>
