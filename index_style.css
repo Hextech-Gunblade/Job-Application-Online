@@ -56,7 +56,10 @@ body{
     background-color: darkorange;
     color: white;
 }
-
+#txtare{
+    width: 850px;
+    height: 200px;
+}
 .mgright{
     margin-right: 50px;
 }
@@ -64,5 +67,8 @@ body{
 @media screen and (max-width:768px){
     .flex{
         flex-direction: column;
+    }
+    #txtare{
+        width: 500px;
     }
 }
